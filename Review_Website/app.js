@@ -1,0 +1,1 @@
+const profilePicture = document.querySelector('.profilePicture');
