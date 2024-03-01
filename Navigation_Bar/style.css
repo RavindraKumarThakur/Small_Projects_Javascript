@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Open Sans", sans-serif;
+    background-color: rgb(245, 253, 253);
+}
+
+.navigation_bar > div{
+    height: auto;
+    width: 100vw;
+    position: sticky;
+    background-color: white;
+    top: 0px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgb(227 227 227);
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.social-icons{
+    height: 60px;
+    width: 190px;
+}
+
+.menu{
+    list-style: none;
+    display: inline-flex;
+    gap: 20px;
+}
+
+.home a{
+    text-decoration: none;
+    color: rgb(30, 30, 30);
+}
+
+.logos{
+    list-style: none;
+    display: inline-flex;
+    gap: 15px;
+}
+
+.logo a img{
+    height: 20px;
+    width: 20px;
+}
+
+.toggle img{
+    height: 20px;
+    width: 20px;
+    display: none;
+    transition: 0.5s;
+}
+
+.toggle img:hover{
+    transform: rotate(-90deg);
+}
+
+.toggle{
+    background-color: white;
+    border: none;
+}
+
+.menu-small{
+    list-style: none;
+    background-color: white;
+    width: 100%;
+    height: 10rem;
+    margin-top: 0px;
+    display: block;
+    visibility: collapse;
+    /* transition: 1s; */
+}
+
+.menu-small-after{
+    visibility: collapse;
+    /* transition: 1s; */
+    background-color: white;
+    width: 100%;
+    height: 10rem;
+}
+
+.menu-small-click{
+    visibility: visible;
+}
+
+.home-small a{
+    text-decoration: none;
+    color: rgb(30, 30, 30);
+    height: 2rem;
+    margin-top: 10px;
+    display: block;
+}
+
+@media  screen and (max-width:1439px) {
+    .navigation_bar > div{
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .navigation_bar > div{
+        width: 100vw;
+    }
+    .menu{
+        display: none;
+    }
+    .logos{
+        display: none;
+    }
+    .toggle img{
+        display: block;
+        margin-right: 20px;
+    }
+    .menu-small{
+        list-style: none;
+    }
+}
