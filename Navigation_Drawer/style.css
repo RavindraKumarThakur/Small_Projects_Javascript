@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Open Sans", sans-serif;
+    background-color: aliceblue;
+}
+
+.toggle_btn{
+    background-color: aliceblue;
+    border: none;
+    position: fixed;
+    right: 25px;
+    top: 25px;
+    cursor: pointer;
+}
+
+.toggle_btn img{
+    height: 35px;
+    width: 35px;
+}
+
+.drawer{
+    height: 100vh;
+    /* width: 400px; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    transform: translate(-100%);
+    transition: 0.5s;
+}
+
+.show_drawer{
+    transform: translate(0%);
+}
+
+@media screen and (min-width: 768px) {
+    .drawer{
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .drawer{
+        width: 100%;
+    }
+}
+
+.logo{
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.logo img{
+    height: 7rem;
+    width: 15rem;
+    margin-left: 20px;
+}
+
+.logo > button{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.logo > button > img{
+    height: 20px;
+    width: 20px;
+}
+
+.menus{
+    list-style: none;
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    top: 80px;
+    position: absolute;
+    left: -40px;
+}
+
+.menus > li {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.menus > li > a{
+    text-decoration: none;
+    color: rgb(113, 113, 113);
+    font-size: 25px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    height: 4rem;
+    transition: 0.5s;
+}
+
+.menus > li > a:hover{
+    color: rgb(81, 69, 255);
+    background-color: rgb(200, 232, 249);
+    padding-left: 20px;
+}
+
+.social_logo > li > a > img{
+    height: 25px;
+    width: 25px;
+}
+
+.social_logo{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 25%;
+}
