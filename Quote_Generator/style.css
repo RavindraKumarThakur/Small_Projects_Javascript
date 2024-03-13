@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+}
+
+body{
+    background: linear-gradient(#45c4ff,#6dbdff);
+    min-height: 100vh;
+    width: 100%;
+}
+
+.container{
+    height: 450px;
+    width: 750px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 100px auto 0px;
+    padding: 40px;
+}
+
+.title{
+    font-size: 35px;
+    text-align: center;
+    display: block;
+    font-weight: 600;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+.hbar{
+    height: 3px;
+    width: 80px;
+    border-radius: 3px;
+    margin: 0px auto 0px;
+    background-color: rgb(0, 47, 255);
+}
+
+.quote_section{
+    padding: 40px;
+    font-size: 30px;
+    font-weight: 400;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    position: relative;
+}
+
+.author{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.buttons{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.newquote{
+    padding: 18px 45px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(25, 131, 253);
+    cursor: pointer;
+    outline: none;
+    color: white;
+}
+
+.twitter{
+    padding: 18px 45px;
+    border: 1px solid rgb(25, 131, 253);
+    border-radius: 30px;
+    background-color: white;
+    outline: none;
+    color: rgb(25, 131, 253);
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    gap: 10px;
+}
+
+.twitter img{
+    height: 15px;
+    width: 15px;
+}
