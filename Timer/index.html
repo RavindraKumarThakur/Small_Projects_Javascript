@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Timer</title>
+</head>
+<body>
+    
+    <input type="password">
+    <button onclick="play()">hi</button>
+
+    <script>
+        let btn = document.querySelector('input');
+        function play(){
+            if(btn.type == 'password')
+                btn.type = 'text'
+            else
+                btn.type = 'password'
+        }
+    </script>
+</body>
+</html>
